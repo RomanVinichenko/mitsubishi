@@ -37,6 +37,7 @@ body {
 
     &-top {
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -61,21 +62,26 @@ body {
     }
 
     &-content__title {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         font-family: "Roboto", sans-serif;
-        font-size: 96px;
+        font-size: 110px;
         line-height: 112px;
     }
 
     &-content__text {
-        margin-bottom: 25px;
-        width: 284px;
+        margin-bottom: 50px;
+        width: 290px;
+        font-size: 26px;
     }
 }
 
 .logo {
     margin-bottom: 29px;
     padding-top: 36px;
+
+    img {
+        height: 70px;
+    }
 }
 
 .button {
@@ -223,7 +229,7 @@ body {
     }
 
     &-item__num span {
-        margin-left: -20px;
+        margin-left: -10px;
         font-size: 24px;
         line-height: 28px;
     }
@@ -272,7 +278,7 @@ body {
     }
 
     &__text {
-        width: 303px;
+        width: 400  px;
     }
 
     &__text ul {
@@ -422,8 +428,12 @@ body {
         width: 100%;
     }
 
+    .slider__item--2 {
+        background: 40%/cover;
+    }
+
     .design-row__item-text {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -438,11 +448,17 @@ body {
 
 @media (max-width: 410px) {
     .logo img {
-        width: 200px;
+        height: 50px;
+    }
+
+    .header-content__text {
+        margin-bottom: 40px;
+        font-size: 22px;
     }
 
     .header-content__title {
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 35px;
         font-family: "Roboto", sans-serif;
         font-size: 70px;
         line-height: 85px;
@@ -483,5 +499,6 @@ body {
 
     .advantages__text {
         width: 100%;
+        font-size: 20px;
     }
 }
